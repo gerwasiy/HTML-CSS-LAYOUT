@@ -1,0 +1,310 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Hind', sans-serif;
+    font-weight: 300;
+
+}
+
+%display-column {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+header {
+    background: $header-bg;
+    height: 800px;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border: 1px solid white;
+    background-size: 100%;
+
+}
+
+
+.header-content {
+
+    opacity: 80%;
+    justify-content: space-around;
+    height: 100%;
+    @extend %display-column;
+
+}
+
+.countries {
+    display: flex;
+    flex-direction: row;
+}
+
+.countries>li {
+    list-style-type: none;
+    margin: 0px 20px 0px 10px;
+    @extend %display-column;
+    justify-content: center;
+    align-items: center;
+}
+
+.countries>li>a {
+    color: $countries-color;
+    font-size: 24px;
+    @extend %display-column;
+    align-items: center;
+    transition-duration: 0.5s;
+
+}
+
+header {
+    h1 {
+        color: white;
+        align-self: center;
+        width: 650px;
+        text-align: center;
+    }
+}
+
+.learn-more {
+    align-self: center;
+    margin-bottom: 120px;
+
+}
+
+.learn-more>a {
+    color: gray;
+    border: 1px solid gray;
+    width: 160px;
+    height: 60px;
+    padding: 23px 40px;
+    transition-duration: 0.5s;
+    text-align: center;
+
+}
+
+.learn-more>a:hover {
+    color: white;
+    border-color: white;
+
+    transition-duration: 0.5s;
+}
+
+a {
+    text-decoration: none;
+}
+
+#look-at {
+    @extend %display-column;
+    align-items: center;
+}
+#look-at>h2{
+    font-size: 40px !important;
+    margin-top: 30px !important;
+}
+
+@mixin look-at-image($image:$look-at-image-1) {
+    background-image: $image;
+    width: 25%;
+    height: auto;
+    background-size: cover;
+}
+
+
+.img-1 {
+    @include look-at-image;
+
+}
+
+.img-2 {
+    @include look-at-image($image:$look-at-image-2)
+}
+
+.img-3 {
+    @include look-at-image($image:$look-at-image-3)
+}
+
+.look-at-content-box {
+    margin: 30px 300px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 14px 0.5px gray
+}
+
+.look-at-text {
+    @extend %display-column;
+    align-items: center;
+    width: 75%;
+    opacity: 80%;
+}
+
+#look-at {
+    h2 {
+        font-size: 30px;
+        font-weight: 200;
+        margin: 0 20px;
+        text-align: center;
+    }
+
+    p {
+        margin: 10px;
+    }
+}
+
+.your-reviews-blocks {
+    display: flex;
+    justify-content: space-around;
+}
+
+.your-reviews-block {
+    background-color: $your-reviews-bg-color;
+    margin: 20px 100px;
+    @extend %display-column;
+    align-items: center;
+
+    h3 {
+        color: $your-reviews-block-color;
+        margin: 20px 0px 0px 0px;
+        font-size: 35px;
+    }
+}
+
+.your-reviews-block-content {
+    background-color: $your-reviews-block-color;
+    display: flex;
+    margin: 10px;
+    width: 100%;
+
+    p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+
+        span {
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        cite {
+            font-style: normal;
+        }
+    }
+
+    img {
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+        margin: 5px 40px 0px 5px;
+    }
+}
+
+.fyot {
+    background-color:$fyot-bg-color;
+    @extend %display-column;
+    margin: 10px 380px;
+    padding: 10px;
+
+    h3 {
+        color: $fyot-h3-color;
+        align-self: center;
+        font-size: 35px;
+    }
+
+    form {
+        display: flex;
+        margin: 5px 25px;
+        justify-content: space-between;
+
+        div>input,
+        div>select {
+            border: none;
+            background-color: $fyot-bg-color;
+            border-bottom: 1px solid gray;
+            color: gray;
+        }
+
+    }
+}
+
+footer {
+    background-color: $footer-bg-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+
+    h4 {
+        color: $footer-h4-color;
+        text-align: left;
+    }
+
+    p {
+        color: $footer-p-button-color;
+    }
+
+    a {
+        color: $footer-li-color;
+    }
+
+    li {
+        list-style-type: none;
+
+    }
+
+    ul {
+        padding: 0;
+    }
+
+}
+
+#folow-us {
+    width: 33%;
+}
+
+.icon {
+
+    margin-right: 20px;
+    height: auto;
+}
+
+.icon-soc {
+    width: 30px;
+}
+
+.icon-pay {
+    width: 50px;
+}
+
+#feedback {
+    @extend %display-column;
+
+    h4:first-child {
+        color: black;
+    }
+
+    form {
+        @extend %display-column;
+
+        input {
+            width: 500px;
+            height: 30px;
+            padding: 0px 3px;
+            margin-bottom: 10px;
+
+        }
+
+        button {
+            height: 30px;
+            background-color: $footer-p-button-color;
+            border: 0;
+            color: white;
+        }
+    }
+}

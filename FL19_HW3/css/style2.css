@@ -1,0 +1,214 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: lighter;
+  margin: 0; }
+
+h1,
+h2,
+h3 {
+  font-family: 'Hind', sans-serif;
+  font-weight: 300; }
+
+.header-content, .countries > li, .countries > li > a, #look-at, .look-at-text, .your-reviews-block, .fyot, #feedback, #feedback form {
+  display: flex;
+  flex-direction: column; }
+
+h1 {
+  font-size: 40px; }
+
+header {
+  background: url(../img/4.jpg);
+  height: 800px;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  border: 1px solid white;
+  background-size: 100%; }
+
+.header-content {
+  opacity: 80%;
+  justify-content: space-around;
+  height: 100%; }
+
+.countries {
+  display: flex;
+  flex-direction: row; }
+
+.countries > li {
+  list-style-type: none;
+  margin: 0px 20px 0px 10px;
+  justify-content: center;
+  align-items: center; }
+
+.countries > li > a {
+  color: #4e2856;
+  font-size: 24px;
+  align-items: center;
+  transition-duration: 0.5s; }
+
+header h1 {
+  color: white;
+  align-self: center;
+  width: 650px;
+  text-align: center; }
+
+.learn-more {
+  align-self: center;
+  margin-bottom: 120px; }
+
+.learn-more > a {
+  color: gray;
+  border: 1px solid gray;
+  width: 160px;
+  height: 60px;
+  padding: 23px 40px;
+  transition-duration: 0.5s;
+  text-align: center; }
+
+.learn-more > a:hover {
+  color: white;
+  border-color: white;
+  transition-duration: 0.5s; }
+
+a {
+  text-decoration: none; }
+
+#look-at {
+  align-items: center; }
+
+#look-at > h2 {
+  font-size: 40px !important;
+  margin-top: 30px !important; }
+
+.img-1 {
+  background-image: url(../img/5.jpeg);
+  width: 25%;
+  height: auto;
+  background-size: cover; }
+
+.img-2 {
+  background-image: url(../img/6.jpg);
+  width: 25%;
+  height: auto;
+  background-size: cover; }
+
+.img-3 {
+  background-image: url(../img/7.jpg);
+  width: 25%;
+  height: auto;
+  background-size: cover; }
+
+.look-at-content-box {
+  margin: 30px 300px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 0px 14px 0.5px gray; }
+
+.look-at-text {
+  align-items: center;
+  width: 75%;
+  opacity: 80%; }
+
+#look-at h2 {
+  font-size: 30px;
+  font-weight: 200;
+  margin: 0 20px;
+  text-align: center; }
+#look-at p {
+  margin: 10px; }
+
+.your-reviews-blocks {
+  display: flex;
+  justify-content: space-around; }
+
+.your-reviews-block {
+  background-color: #8a6f8d;
+  margin: 20px 100px;
+  align-items: center; }
+  .your-reviews-block h3 {
+    color: #caa2cb;
+    margin: 20px 0px 0px 0px;
+    font-size: 35px; }
+
+.your-reviews-block-content {
+  background-color: #caa2cb;
+  display: flex;
+  margin: 10px;
+  width: 100%; }
+  .your-reviews-block-content p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white; }
+    .your-reviews-block-content p span {
+      font-style: italic;
+      margin-top: 5px; }
+    .your-reviews-block-content p cite {
+      font-style: normal; }
+  .your-reviews-block-content img {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    margin: 5px 40px 0px 5px; }
+
+.fyot {
+  background-color: #9f86a2;
+  margin: 10px 380px;
+  padding: 10px; }
+  .fyot h3 {
+    color: #4f2853;
+    align-self: center;
+    font-size: 35px; }
+  .fyot form {
+    display: flex;
+    margin: 5px 25px;
+    justify-content: space-between; }
+    .fyot form div > input,
+    .fyot form div > select {
+      border: none;
+      background-color: #9f86a2;
+      border-bottom: 1px solid gray;
+      color: gray; }
+
+footer {
+  background-color: #5d3d85;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px; }
+  footer h4 {
+    color: #b965f1;
+    text-align: left; }
+  footer p {
+    color: #4f0a5e; }
+  footer a {
+    color: #8845d0; }
+  footer li {
+    list-style-type: none; }
+  footer ul {
+    padding: 0; }
+
+#folow-us {
+  width: 33%; }
+
+.icon {
+  margin-right: 20px;
+  height: auto; }
+
+.icon-soc {
+  width: 30px; }
+
+.icon-pay {
+  width: 50px; }
+
+#feedback h4:first-child {
+  color: black; }
+#feedback form input {
+  width: 500px;
+  height: 30px;
+  padding: 0px 3px;
+  margin-bottom: 10px; }
+#feedback form button {
+  height: 30px;
+  background-color: #4f0a5e;
+  border: 0;
+  color: white; }
